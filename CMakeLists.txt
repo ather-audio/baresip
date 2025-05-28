@@ -36,7 +36,9 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
 include(GNUInstallDirs)
 include(CheckIncludeFile)
-find_package(RE REQUIRED)
+
+add_subdirectory(re)
+include_directories(re/include)
 
 ##############################################################################
 #
